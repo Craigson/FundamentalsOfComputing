@@ -1,5 +1,10 @@
 # Fundamentals Of Computing
 
+##What is a computer?
+The very first electromechanical computers consisted of electric switches driving mechanical relays to perform calculations.
+
+These days, anything that has at least one central processing unit (CPU) and some memory is considered to be a computer in the general sense.  
+
 ##Algorithms
 An algorithm is a set of step-by-step instructions a computer program follows to do something
 
