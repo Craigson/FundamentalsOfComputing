@@ -1,9 +1,13 @@
 # Fundamentals Of Computing
 
-##What is a computer?
-The very first electromechanical computers consisted of electric switches driving mechanical relays to perform calculations.
+##A short history of computing
+The very first electromechanical computers comprised electric switches driving mechanical relays.  Later, around the 1930s, mechanical relays were replaced by vacuum tubes.  This greatly increased the capabilities and operating speed of these early machines.
 
-These days, anything that has at least one central processing unit (CPU) and some memory is considered to be a computer in the general sense.  
+Perhaps the single greatest invention in the history of computing was that of the bipolar transistor.  Why? They're smaller, require less power, generate less heat, and are more reliable.
+
+The next great advance came in the form of the integrated circuit (IC), also referred to as a microchip.  An IC is a set of electronic circuits on a single plate of semiconductor material ( usually silicon ).  Several billion transistors (and other components) can fit onto a chip the size of a human fingernail.
+
+
 
 ##Algorithms
 An algorithm is a set of step-by-step instructions a computer program follows to do something
