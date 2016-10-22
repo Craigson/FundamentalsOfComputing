@@ -1,5 +1,7 @@
-# Fundamentals Of Computing: An ITP workshop
-
+# Fundamentals Of Computing: An ITP Workshop
+By Craig Pickard & Kat Sullivan
+</br>
+</br>
 ##A short history of computing
 The very first electromechanical computers comprised electric switches driving mechanical relays.  Later, around the 1930s, mechanical relays were replaced by vacuum tubes.  This greatly increased the capabilities and operating speed of these early machines.
 
@@ -27,9 +29,9 @@ so
 | --- |--- | -----|
 | 4*10<sup>2</sup>| 3*10<sup>1</sup> | 7*10<sup>0</sup>|
 
-Note that just like we have **10** possible numbers in decimal notation, this is also a base **10** system. 437 has a hundreds place, a tens place, and a one place, which are all base **10**.
+Note that just like we have **10** possible numbers in decimal notation, this is also a base **10** system. 437 has a hundreds place, a tens place, and a ones place, which are all base **10**.
 
-*Binary* is similar to decimal notation but instead of 10 numbers (0-9) and base 10, we have 2 (0 & 1) numbers and it is base 2. 
+*Binary* is similar to decimal notation but instead of 10 numbers (0-9) and base 10, we have 2 (0 & 1) numbers and it is base 2. So instead of a ones place, tens place, hundreds place, etc, we have a ones place, a twos place, a fours place, an eight place, etc.
 
 Let's look at the numbers zero through eight, in binary and decimal.
 
@@ -52,7 +54,7 @@ Let's break this down a bit with the binary number **101110011**
 | --- |--- | -----|---  |---- |-----  | ----- |---| ---|
 | 1*2<sup>8</sup>| 0*2<sup>7</sup> | 1*2<sup>6</sup>|1*2<sup>5</sup>|1*2<sup>4</sup>| 0*2<sup>3</sup> | 0*2<sup>2</sup>|1*2<sup>1</sup>|1*2<sup>0</sup>|
 
-add this all together and you get **371**
+add this all together and you get **371** in decimal
 
 So what's hexadecimal? You've probably used it dozens of times without even realizing.
 
