@@ -9,7 +9,13 @@ Perhaps the single greatest invention in the history of computing was that of th
 
 The next great advance came in the form of the integrated circuit (IC), also referred to as a microchip.  An IC is a set of electronic circuits on a single plate of semiconductor material ( usually silicon ).  Several billion transistors (and other components) can fit onto a chip the size of a human fingernail.  This, in turn, led to the invention of the microprocessor. A microprocessor takes input, performs some sort of operation ( processing ), and produces an output.
 
-[describe CPU and processors and the idea]
+A computer's Central Processing Unit ( CPU )  is the primary component of a computer that processes instructions. It runs the operating system and applications, constantly receiving input from the user or active software programs. It processes the data and produces output, which may stored by an application or displayed on the screen. The terms "CPU" and "processor" are often used interchangeably. Some technical diagrams even label individual processors as CPUs. While this verbiage is not incorrect, it is more accurate (and less confusing) to describe each processing unit as a CPU, while each processor within a CPU is a processing core.
+
+For example, a CPU has a clock speed of 1 Hz if it can process one piece of instruction every second. Extrapolating this to a more real-world example: a CPU that has a clock speed of 3.0 GHz can process 3 billion instructions each and every second.
+
+Another component of a CPU is cache. CPU cache is like a temporary holding for commonly used data. Instead of calling on RAM for these items, the CPU determines what data you seem to keep using, assumes you'll want to keep using it, and stores it in cache. Cache is faster than using RAM because it's a physical part of the processor; more cache means more space for holding such information.
+
+Whether your computer can run a 32-bit or 64-bit operating system depends on the size of data units that the CPU can work with. More memory can be accessed at once and in larger pieces with a 64-bit processor than a 32-bit one, which is why operating systems and applications that are 64-bit-specific cannot run on a 32-bit processor.
 
 At this point, you've probably heard the term 'bit' before ('bit' stands for 'binary digit' ).  Why is this relevant? Remember we were talking about the invention of the transistor - well, a transistor is essentially a small electronic switch.  Like a light switch, it has two possible states: On and Off. A transistor has two possible states: High and Low.  We can represent this as the binary numbers 1 or 0.
 
