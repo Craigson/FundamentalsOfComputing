@@ -66,6 +66,7 @@ As it turns out, 8bits of data (or a single byte) is a very convenient size for 
 
 ASCII is an abbreviation for <i>American Standard Code for Information Interchange<i>. It's a character-encoding scheme used to represent text in a computer.
 
+![Image of Yaktocat](http://www.asciichars.com/_site_media/ascii/ascii-chars-landscape.jpg)
 
 ##Variables
 A variable represents a value. To use a variable there are two steps:
