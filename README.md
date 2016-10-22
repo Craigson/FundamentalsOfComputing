@@ -75,17 +75,19 @@ If you work with, or even on, a computer, there's a good chance you've heard som
 
 Perhaps you've heard hard the term 'RAM', but perhaps not.  RAM stands for 'Random Access Memory' and is more often than not the specific form of memory people are referring to when they talk about a computer's 'memory'.  For instance, if you're looking to buy a new laptop, one of the first things you look for in the specification is its memory, ie. how many gigabytes ( GB ) of RAM does it have.  Well why is this important?  By it's very nature, accessing your computer's RAM is incredibly fast! The reason for this is inferred from it's name, ie. 'random access'.  RAM is a form of integrated circuit ( remember those? ). RAM's speed is a result of the fact that data can be read and/or written at the same speed no matter where in the memory the data is stored.  Read/Write speeds of storage like HDDs depends very much on the data's physical location on the disc.  Okay, now we know what RAM is, but what do we do with it?
 
-When you double click an executable file on your computer ( for example a .exe file on Windows, or an application on Mac OSC ), or you run a sketch that you've created in something like p5.js, processing, openFrameworks, or Cinder, your computer allocates it a large chunk of contiguous ( meaning sequential ) memory in your RAM. In a physical sense we can think of this as n-number of sequential transisors set aside to store n-bytes of data ( the size is of which determined by your computer at runtime ). We can think of this conceptually as a 'block' of memory.  Now, the important thing to understand here is that your computer keeps track of the location of where every byte of data is stored. It does this using something called a memory <i>address</i>.  You can think of it as being analogous to your street address where you live.  You can give someone your address, which is essentially just a collection of characters ( remember ASCII ), and they'll know how to find you.  The location of each byte in memory has a physical address ( that looks something like this  <b>0x101d00a70</b> ), which tells the computer where to look for that specific piece of data.
-
-##What does it mean to 'program' a computer?
-
+When you double click an executable file on your computer ( for example a .exe file on Windows, or an application on Mac OSC ), or you run a sketch that you've created in something like p5.js, processing, openFrameworks, or Cinder, your computer allocates it a large chunk of contiguous ( meaning sequential ) memory in your RAM. In a physical sense we can think of this as n-number of sequential transisors set aside to store n-bytes of data ( the size is of which determined by your computer at runtime ). We can think of this conceptually as a 'block' of memory.  Now, the important thing to understand here is that your computer keeps track of the location of where every byte of data is stored. It does this using something called a memory <i>address</i>.  You can think of it as being analogous to your street address where you live.  You can give someone your address, which is essentially just a collection of characters ( remember ASCII ), and they'll know how to find you.  The location of each byte in memory has a physical address ( that looks something like this  <b>0x101d00a70</b> ), which tells the computer where to look for that specific piece of data.  So how do we store information at one of these addresses? We do this using <i>variables</i>.
 
 ##Variables
 
+A variable essentially represents a piece of data that is stored at a specific location in your computers physical memory.  If you think about it, you can change the value that a variable stores, but the variable name itself remains unchanged.  In the same way, think about the house or apartment that you currently live in, the address never changes, but over the years the occupants change.  In most languages (not javascript), you need to tell the computer what <i>type</i> of variable you want.  There are 4 main types: integers ( whole numbers ), floats ( values that have a decimal point ), char ( ASCII characters ) and doubles ( a special kind of float ).  Each data type can store a specific amount of information.  In other words, each data type will store a specific number of bytes:
+* int - 4 bytes ( 32 bits )
+* float - 4 bytes (32 bits )
+* char - 1 byte ( 8 bits )
+* double - 8 bytes ( 64 bits )
 
+So, to summarize, declaring and intializing ( ie. assigning it a value ) a variable of a specific type tells the computer 2 things.  First, the physical location in memory where the data should be stored. Second, how many bytes to set asideto store said data.
 
-
-A variable represents a value. To use a variable there are two steps:
+To use a variable there are two steps:
 
 1. Declare - here you declare to the compiler that you are going to use the variable you have declared. A declaration contains 2 parts, a data type and a name.
   * Example: `int x;`
