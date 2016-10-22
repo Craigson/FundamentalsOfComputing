@@ -65,7 +65,7 @@ In a very simple sense, your computer's memory is represented in physical space 
 As it turns out, 8bits of data (or a single byte) is a very convenient size for storing all kinds of different information.  For example, every character/letter/number that's found on your keyboard fits into a single byte. This is thanks to a system called ASCII.
 
 ##ASCII
-ASCII is an abbreviation for <i>American Standard Code for Information Interchange</i>. It's a character-encoding scheme used to represent text in a computer.  Each ASCII character can be stored in a single byte because it's represent by a decimal number within the range of 0-255.  The image below shows the ASCII character table.  Each character is represented by a decimal number, which is in turn stored in binary as a combination of 8 bits.  For example, the lowercase 'a' is represented in decimal as 97.  This would be stored in a single byte of memory as the binary number 1100001.
+ASCII is an abbreviation for <i>American Standard Code for Information Interchange</i>. It's a character-encoding scheme used to represent text in a computer.  Each ASCII character can be stored in a single byte because it's represented by a decimal number within the range of 0-255.  The image below shows the ASCII character table.  Each character is represented by a decimal number, which is in turn stored in binary as a combination of 8 bits.  For example, the lowercase 'a' is represented in decimal as 97.  This would be stored in a single byte of memory as the binary number 1100001.
 
 Below is a table showing the mapping of ASCII characters to their decimal representation.
 ![Image of Yaktocat](http://www.asciichars.com/_site_media/ascii/ascii-chars-landscape.jpg)
@@ -79,11 +79,32 @@ When you double click an executable file on your computer ( for example a .exe f
 
 ##Variables
 
-A variable essentially represents a piece of data that is stored at a specific location in your computers physical memory.  If you think about it, you can change the value that a variable stores, but the variable name itself remains unchanged.  In the same way, think about the house or apartment that you currently live in, the address never changes, but over the years the occupants change.  In most languages (not javascript), you need to tell the computer what <i>type</i> of variable you want.  There are 4 main types: integers ( whole numbers ), floats ( values that have a decimal point ), char ( ASCII characters ) and doubles ( a special kind of float ).  Each data type can store a specific amount of information.  In other words, each data type will store a specific number of bytes:
-* int - 4 bytes ( 32 bits )
-* float - 4 bytes (32 bits )
-* char - 1 byte ( 8 bits )
-* double - 8 bytes ( 64 bits )
+A variable essentially represents a piece of data that is stored at a specific location in your computers physical memory.  If you think about it, you can change the value of the variable, but the variable name itself remains unchanged.  In the same way, think about the house or apartment that you currently live in, the address never changes, but over the years the occupants change.  
+
+
+In most languages (not javascript), you need to tell the computer what *type* of variable you want. This is the key difference between **Static Typing** and **Dynamic Typing**.
+
+  * Static Typing is where the type is bound to a variable. Types are checked at run time. Java, C++, and C are static typed languages.
+  	* In Java, for example</br>
+  	`String s = "text";`</br>
+  	s will be a string forever. We can change "text" to something different or assign it to null, but s will never be an int or a boolean.
+  * Dynamic Typing is where the type is bound to the value. Types are checked at run time. Javascript, PHP, and Python are dynamic typed languages.
+  	* In Javascript, for example</br>
+
+~~~~~
+var a = "text";
+a = 123;
+a = [];
+~~~~~
+
+a can be a string, an int, a list, an object, etc.
+
+There are 4 main types: integers ( whole numbers ), floats ( values that have a decimal point ), char ( ASCII characters ) and doubles ( a special kind of float ).  Each data type can store a specific amount of information.  In other words, each data type will store a specific number of bytes:
+ 
+  * int - 4 bytes ( 32 bits )
+  * float - 4 bytes (32 bits )
+  * char - 1 byte ( 8 bits )
+  * double - 8 bytes ( 64 bits )
 
 So, to summarize, declaring and intializing ( ie. assigning it a value ) a variable of a specific type tells the computer 2 things.  First, the physical location in memory where the data should be stored. Second, how many bytes to set asideto store said data.
 
@@ -98,7 +119,7 @@ You can also declare and assign variables in one line: `int x = 42;`
 
 It is good practice to have descriptive variable names like length_square or number_coins. For C languages, like C++, it is convention to have all variable names all lowercased with underscores between words.
 
-Let's look at the following code
+Let's look at the following code:
 
 ~~~~~
 int x = 42;
@@ -108,7 +129,7 @@ x = 5;
 
 What is y now equal to? If you said 43, you're correct. Even though x now equals 5, when y was assigned, x equaled 42, so y will stay at 43, regardless of what x is assigned to afterwards.
 
-Let's look at another block of code
+Let's look at another block of code:
 
 ~~~~
 int x;
