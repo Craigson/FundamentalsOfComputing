@@ -5,16 +5,9 @@ The very first electromechanical computers comprised electric switches driving m
 
 Perhaps the single greatest invention in the history of computing was that of the bipolar transistor.  Why? They're smaller, require less power, generate less heat, and are more reliable.
 
-The next great advance came in the form of the integrated circuit (IC), also referred to as a microchip.  An IC is a set of electronic circuits on a single plate of semiconductor material ( usually silicon ).  Several billion transistors (and other components) can fit onto a chip the size of a human fingernail.
+The next great advance came in the form of the integrated circuit (IC), also referred to as a microchip.  An IC is a set of electronic circuits on a single plate of semiconductor material ( usually silicon ).  Several billion transistors (and other components) can fit onto a chip the size of a human fingernail.  This, in turn, led to the invention of the microprocessor. A microprocessor takes input, performs some sort of operation ( processing ), and produces an output.
 
-
-
-##Algorithms
-An algorithm is a set of step-by-step instructions a computer program follows to do something
-
-* Just like a recipe or a set of driving directions
-* Most often, there are multiple ways to write a single algorithm
-	* Usually there is no single 'best' option, best each algorithm will have pros and cons
+At this point, you've probably heard the term 'bit' before ('bit' stands for 'binary digit' ).  Why is this relevant? Remember we were talking about the invention of the transistor - well, a transistor is essentially a small electronic switch.  It has two states: high-low / on-off / 1-0.
 
 ##Binary
 You are use to the decimal (decem is latin for ten) notation, which uses ten numbers 0-9. If you need to represent a number larger than nine, you use a combination of these numbers. 
@@ -89,6 +82,14 @@ x = x + 1;
 ~~~~
 
 See the problem? We assign x after we declare it, but x has no value, or is null, and something plus nothing, is not only nothing, it's an error.
+
+##Algorithms
+An algorithm is a set of step-by-step instructions a computer program follows to do something
+
+* Just like a recipe or a set of driving directions
+* Most often, there are multiple ways to write a single algorithm
+	* Usually there is no single 'best' option, best each algorithm will have pros and cons
+
 
 ##Arrays
 An array is a large block of memory. If we have an array with 10 elements, it just means we have enough memory to store 10 elements.
