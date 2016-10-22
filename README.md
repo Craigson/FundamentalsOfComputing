@@ -52,6 +52,12 @@ Let's break this down a bit with the binary number **101110011**
 
 add this all together and you get **371**
 
+##Bits and Bytes
+
+As we mentioned, a 'bit' is a 'binary digit'.  Now that we understand a little more about binary, it's time to introduce the concept of a 'byte'.  A byte is a collection of 8 bits.  In other words
+
+
+
 ##Variables
 A variable represents a value. To use a variable there are two steps:
 
