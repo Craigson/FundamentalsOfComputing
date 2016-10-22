@@ -130,9 +130,9 @@ a = [];
 
 a can be a string, an int, a list, an object, etc.
 
-There are 4 main types: integers ( whole numbers ), floats ( values that have a decimal point ), char ( ASCII characters ) and doubles ( a special kind of float ).  Each data type can store a specific amount of information.  In other words, each data type will store a specific number of bytes:
+There are 4 main types: integers ( whole numbers - both negative and positive ), floats ( values that have a decimal point - both positive and negative ), char ( ASCII characters ) and doubles ( double-precision floating point numbers ). There are additional data types, and variations of the ones we mentioned, but for now we'll focus on these as they're probably the most important.  Each data type can store a specific amount of information.  In other words, each data type specifies how much data the variable can store:
  
-  * int - 4 bytes ( 32 bits )
+  * int - 4 bytes ( 32 bits ), with a range of −32,768 to 32,767
   * float - 4 bytes (32 bits )
   * char - 1 byte ( 8 bits )
   * double - 8 bytes ( 64 bits )
