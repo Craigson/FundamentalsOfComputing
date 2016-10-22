@@ -111,7 +111,7 @@ In most languages (not javascript), you need to tell the computer what *type* of
   	* In Java, for example</br>
   	`String s = "text";`</br>
   	s will be a string forever. We can change "text" to something different or assign it to null, but s will never be an int or a boolean.
-  * Dynamic Typing is where the type is bound to the value. Types are checked at run time. Javascript, PHP, and Python are dynamic typed languages.
+  * Dynamic Typing is where the type is bound to the value. Types are checked at run time. Javascript, PHP, and Python are dynamically typed languages.
   	* In Javascript, for example</br>
 
 ~~~~~
@@ -133,7 +133,7 @@ So, to summarize, declaring and intializing ( ie. assigning it a value ) a varia
 
 To use a variable there are two steps:
 
-1. Declare - here you declare to the compiler that you are going to use the variable you have declared. A declaration contains 2 parts, a data type and a name.
+1. Declare - here you declare to the compiler that you are going to use the variable you have declared. A declaration contains 2 parts, a data type (if you are using a dynamically typed language) and a name.
   * Example: `int x;`
 2. Assignment - here you give your variable a value using the equal sign. *You must declare a variable before you can assign it a value.*
   * Example: `x=42;`
