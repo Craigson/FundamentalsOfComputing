@@ -56,8 +56,15 @@ add this all together and you get **371**
 
 As we mentioned previously, a 'bit' is a 'binary digit'.  Now that we understand a little more about binary, it's time to introduce the concept of a 'byte'.  A byte is simply a collection of 8 individual bits - In other words 2<sup>8</sup> (256) possible combinations. If you're old enough to remember the early days of personal computers and floppy disks, you might remember that they stored around 1.44 megabytes of data.  Let's think about that for a second... the prefix 'mega' denotes 10<sup>6</sup> or ( 1 000 000 ), so a 'mega'-'byte' is essentially 10<sup>6</sup> x 2<sup>8</sup> bits.  That's 256,000,000 individual 1<sup>s</sup> and 0<sup>s</sup>.
 
-Perhaps this rings a bell? If you recall, the RGB colour system uses values from 0-255.  Each colour channel stores exactly 1 byte of data 
+Let's take a second to think about what a byte actually is.  We already know that a byte is a combination of 8 consecutive bits.  But what's the significance of this? If you recall, the RGB colour system uses values from 0-255.  Coincidence? I think not! Each colour channel stores exactly 1 byte of data, or a value from 0 to 255.  This means that in order to represent the colour of a single pixel, we need exactly 3 bytes of memory, or enough space to store 3 x (0-255).
 
+In a very simple sense, your computer's memory is represented in physical space by a collection of transistors ( hundreds of millions of them ).  In order to store the colour information for a single pixel we need 3 bytes, or 24 bits, which means 24 individual transistors will hold the desired combination of high and low charges, representing the 0 and 1 values.
+
+As it turns out, 8bits of data (or a single byte) is a very convenient size for storing all kinds of different information information.  For example, every character/letter/number that's found on your keyboard fits into a single byte. This is thanks to a system called ASCII.
+
+##ASCII
+
+ASCII is an abbreviation for <i>American Standard Code for Information Interchange<i>. It's a character-encoding scheme used to represent text in a computer.
 
 
 ##Variables
