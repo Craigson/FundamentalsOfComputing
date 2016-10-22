@@ -58,7 +58,7 @@ add this all together and you get **371**
 
 As we mentioned previously, a 'bit' is a 'binary digit'.  Now that we understand a little more about binary, it's time to introduce the concept of a 'byte'.  A byte is simply a collection of 8 individual bits - In other words 2<sup>8</sup> (256) possible combinations. If you're old enough to remember the early days of personal computers and floppy disks, you might remember that they stored around 1.44 megabytes of data.  Let's think about that for a second... the prefix 'mega' denotes 10<sup>6</sup> or ( 1 000 000 ), so a 'mega'-'byte' is essentially 10<sup>6</sup> x 2<sup>8</sup> bits.  That's 256,000,000 individual 1<sup>s</sup> and 0<sup>s</sup>.
 
-Let's take a second to think about what a byte actually is.  We already know that a byte is a combination of 8 consecutive bits.  But what's the significance of this? If you recall, the RGB colour system uses values from 0-255.  Coincidence? I think not! Each colour channel stores exactly 1 byte of data, or a value from 0 to 255.  This means that in order to represent the colour of a single pixel, we need exactly 3 bytes of memory, or enough space to store 3 x (0-255).
+Let's take a second to think about what a byte actually is.  We already know that a byte is a combination of 8 consecutive bits.  But what's the significance of this? If you recall, the RGB colour system uses values from 0-255.  Coincidence? I think not! Each colour channel stores exactly 1 byte of data, or a value from 0 to 255.  This means that in order to represent the colour of a single pixel, we need exactly 3 bytes of memory, or enough space to store 3 x 8bits at a resolution of 0-255.
 
 In a very simple sense, your computer's memory is represented in physical space by a collection of transistors ( hundreds of millions of them ).  In order to store the colour information for a single pixel we need 3 bytes, or 24 bits, which means 24 individual transistors will hold the desired combination of high and low charges, representing the 0 and 1 values.
 
@@ -67,10 +67,11 @@ As it turns out, 8bits of data (or a single byte) is a very convenient size for 
 ##ASCII
 ASCII is an abbreviation for <i>American Standard Code for Information Interchange</i>. It's a character-encoding scheme used to represent text in a computer.  Each ASCII character can be stored in a single byte because it's represent by a decimal number within the range of 0-255.  The image below shows the ASCII character table.  Each character is represented by a decimal number, which is in turn stored in binary as a combination of 8 bits.  For example, the lowercase 'a' is represented in decimal as 97.  This would be stored in a single byte of memory as the binary number 1100001.
 
+Below is a table showing the mapping of ASCII characters to their decimal representation.
 ![Image of Yaktocat](http://www.asciichars.com/_site_media/ascii/ascii-chars-landscape.jpg)
 
 ##MEMORY
-We're always hearing people refer to a computer's 'memory', but what exactly does that mean? At this point it's important to make the distinction between 'memory' and 'storage'.  
+If you work with, or even on, a computer, there's a good chance you've heard someone refer to its 'memory', but what exactly does that mean? At this point it's important to make the distinction between 'memory' and 'storage'.  Your computer's hard disk drive (HDD) is a data storage device.  Traditional HDDs use rigid rapidly rotating discs covered with magnetic material.  Magnetic heads on moving actuator arms read and write data to these discs.  'Saving' a file on your computer's hard drive involves the moving actuator arms writing data to the disc by magnetising specific 'sectors' on the disc iteslf. This 'permanent' storage is known as non-volatile memory.  The term 'non-volatile' refers to the fact that the data is retained, even after the HDD is powered off.  Anoter form of storage happens in <i>flash memory</i>. Portable storage devices like USB drives make use of flash memory and are referred to as Solid State Drives ( SSD ).  SSDs make use of semiconductor chips, rather than magnetic media, to store data.
 
 ##What does it mean to 'program' a computer?
 
