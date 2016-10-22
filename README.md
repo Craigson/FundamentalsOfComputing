@@ -109,7 +109,7 @@ A variable essentially represents a piece of data that is stored at a specific l
 
 In most languages (not javascript), you need to tell the computer what *type* of variable you want. This is the key difference between **Static Typing** and **Dynamic Typing**.
 
-  * Static Typing is where the type is bound to a variable. Types are checked at run time. Java, C++, and C are static typed languages.
+  * Static Typing is where the type is bound to a variable. Types are checked at compile time. Java, C++, and C are static typed languages.
   	* In Java, for example</br>
   	`String s = "text";`</br>
   	s will be a string forever. We can change "text" to something different or assign it to null, but s will never be an int or a boolean.
