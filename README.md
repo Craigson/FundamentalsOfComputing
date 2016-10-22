@@ -54,7 +54,9 @@ add this all together and you get **371**
 
 ##Bits and Bytes
 
-As we mentioned, a 'bit' is a 'binary digit'.  Now that we understand a little more about binary, it's time to introduce the concept of a 'byte'.  A byte is a collection of 8 bits - In other words 2<sup>8</sup> (256) possible combinations. 
+As we mentioned, a 'bit' is a 'binary digit'.  Now that we understand a little more about binary, it's time to introduce the concept of a 'byte'.  A byte is simply a collection of 8 individual bits - In other words 2<sup>8</sup> (256) possible combinations. If you're old enough to remember the early days of personal computers and floppy disks, you might remember that they stored around 1.44 megabytes of data.  Let's think about that for a second... the prefix 'mega' denotes 10<sup>6</sup> ( or ( 1 000 000 ), so a 'mega'-'byte' is essentially 10<sup>6</sup> x 2<sup>8</sup> bits.  That's 256,000,000 1s and 0s.
+
+Perhaps this rings a bell? If you recall, the RGB colour system uses values from 0-255.  Each colour channel stores exactly 1 byte of data 
 
 
 
