@@ -18,8 +18,8 @@ Let's look at the number **437**
 
 We can write this several ways: </br>
 400 + 30 + 7 </br>
-4 * 100 + 3 * 10 + 7 *1</br>
-4 * **10**<sup>2</sup> + 3 * **10**<sup>1</sup> + 7 * **10**<sup>0</sup>
+4 * 100 + 3 * 10 + 7 * 1</br>
+4 * 10<sup>2</sup> + 3 * 10<sup>1</sup> + 7 * 10<sup>0</sup>
 
 so
 
@@ -70,7 +70,7 @@ ASCII is an abbreviation for <i>American Standard Code for Information Interchan
 Below is a table showing the mapping of ASCII characters to their decimal representation.
 ![Image of Yaktocat](http://www.asciichars.com/_site_media/ascii/ascii-chars-landscape.jpg)
 
-##MEMORY
+##Memory
 If you work with, or even on, a computer, there's a good chance you've heard someone refer to its 'memory', but what exactly does that mean? At this point it's important to make the distinction between 'memory' and 'storage'.  Your computer's hard disk drive (HDD) is a data storage device.  Traditional HDDs use rigid rapidly rotating discs covered with magnetic material.  Magnetic heads on moving actuator arms read and write data to these discs.  'Saving' a file on your computer's hard drive involves the moving actuator arms writing data to the disc by magnetising specific 'sectors' on the disc iteslf. This 'permanent' storage is known as non-volatile memory.  The term 'non-volatile' refers to the fact that the data is retained, even after the HDD is powered off.  Anoter form of storage happens in <i>flash memory</i>. Portable storage devices like USB drives make use of flash memory and are referred to as Solid State Drives ( SSD ).  SSDs make use of semiconductor chips, rather than magnetic media, to store data.
 
 Perhaps you've heard hard the term 'RAM', but perhaps not.  RAM stands for 'Random Access Memory' and is more often than not the specific form of memory people are referring to when they talk about a computer's 'memory'.  For instance, if you're looking to buy a new laptop, one of the first things you look for in the specification is its memory, ie. how many gigabytes ( GB ) of RAM does it have.  Well why is this important?  By it's very nature, accessing your computer's RAM is incredibly fast! The reason for this is inferred from it's name, ie. 'random access'.  RAM is a form of integrated circuit ( remember those? ). RAM's speed is a result of the fact that data can be read and/or written at the same speed no matter where in the memory the data is stored.  Read/Write speeds of storage like HDDs depends very much on the data's physical location on the disc.  Okay, now we know what RAM is, but what do we do with it?
