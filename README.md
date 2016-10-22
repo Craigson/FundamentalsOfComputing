@@ -50,7 +50,7 @@ Let's break this down a bit with the binary number **101110011**
 
 | 1   | 0  | 1    | 1   |1    | 0     | 0     | 1 | 1 |
 | --- |--- | -----|---  |---- |-----  | ----- |---| ---|
-| 1*2<sup>8</sup>| 0*2<sup>7</sup> | 0*2<sup>6</sup>|0*2<sup>5</sup>|1*2<sup>4</sup>| 0*2<sup>3</sup> | 0*2<sup>2</sup>|0*2<sup>1</sup>|0*2<sup>0</sup>|
+| 1*2<sup>8</sup>| 0*2<sup>7</sup> | 0*2<sup>6</sup>|0*2<sup>5</sup>|1*2<sup>4</sup>| 0*2<sup>3</sup> | 0*2<sup>2</sup>|1*2<sup>1</sup>|1*2<sup>0</sup>|
 
 add this all together and you get **371**
 
