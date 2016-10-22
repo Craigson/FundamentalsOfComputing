@@ -11,7 +11,7 @@ The next great advance came in the form of the integrated circuit (IC), also ref
 
 At this point, you've probably heard the term 'bit' before ('bit' stands for 'binary digit' ).  Why is this relevant? Remember we were talking about the invention of the transistor - well, a transistor is essentially a small electronic switch.  Like a light switch, it has two possible states: On and Off. A transistor has two possible states: High and Low.  We can represent this in binary as 1 or 0.
 
-##Binary
+##Binary, Decimal, & Hexadecimal
 You are use to the decimal (decem is latin for ten) notation, which uses ten numbers 0-9. If you need to represent a number larger than nine, you use a combination of these numbers. 
 
 Let's look at the number **437**
@@ -50,9 +50,30 @@ Let's break this down a bit with the binary number **101110011**
 
 | 1   | 0  | 1    | 1   |1    | 0     | 0     | 1 | 1 |
 | --- |--- | -----|---  |---- |-----  | ----- |---| ---|
-| 1*2<sup>8</sup>| 0*2<sup>7</sup> | 0*2<sup>6</sup>|0*2<sup>5</sup>|1*2<sup>4</sup>| 0*2<sup>3</sup> | 0*2<sup>2</sup>|0*2<sup>1</sup>|0*2<sup>0</sup>
+| 1*2<sup>8</sup>| 0*2<sup>7</sup> | 0*2<sup>6</sup>|0*2<sup>5</sup>|1*2<sup>4</sup>| 0*2<sup>3</sup> | 0*2<sup>2</sup>|0*2<sup>1</sup>|0*2<sup>0</sup>|
 
 add this all together and you get **371**
+
+So what's hexadecimal? You've probably used it dozens of times without even realizing.
+
+`var c = color('#5F4');`
+
+`#5F4` is hexadecimal. We can tell because there's a # followed by a series of numbers and letters between A and F. It can also be written as `0x5F4` where 0x indicates a hex number. 
+
+Hexadecimal follows the same rules as binary and decimal except it's based 16. Because we use the latin numeral system which only has ten numbers, we use A,B,C,D,E & F to represent 10-15.
+
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |10 |11 |12 |13 | 14| 15|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | A | B | C | D |  E| F |
+
+Let's look at the hex number **D8AF** 
+
+
+| D   | 8  | A    | F   |
+| --- |--- | -----|---  |
+| 13*16<sup>3</sup>| 8*16<sup>2</sup> | 10*16<sup>1</sup>|15*16<sup>0</sup>|
+
+This converts to 55471 in decimal.
 
 ##Bits and Bytes
 
