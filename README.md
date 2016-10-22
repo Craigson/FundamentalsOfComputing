@@ -63,7 +63,7 @@ In a very simple sense, your computer's memory is represented in physical space 
 As it turns out, 8bits of data (or a single byte) is a very convenient size for storing all kinds of different information information.  For example, every character/letter/number that's found on your keyboard fits into a single byte. This is thanks to a system called ASCII.
 
 ##ASCII
-ASCII is an abbreviation for <i>American Standard Code for Information Interchange</i>. It's a character-encoding scheme used to represent text in a computer.  Each ASCII character can be stored in a single byte.  The image below shows the ASCII character table.  Each character is represented by a decimal number, which is in turn stored in binary as a combination of 8 bits.  For example, the lowercase 'a' is represented in decimal as 97.  This would be stored in a single byte of memory as the binary number 1100001.
+ASCII is an abbreviation for <i>American Standard Code for Information Interchange</i>. It's a character-encoding scheme used to represent text in a computer.  Each ASCII character can be stored in a single byte because it's represent by a decimal number within the range of 0-255.  The image below shows the ASCII character table.  Each character is represented by a decimal number, which is in turn stored in binary as a combination of 8 bits.  For example, the lowercase 'a' is represented in decimal as 97.  This would be stored in a single byte of memory as the binary number 1100001.
 
 ![Image of Yaktocat](http://www.asciichars.com/_site_media/ascii/ascii-chars-landscape.jpg)
 
