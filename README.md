@@ -7,6 +7,8 @@ Perhaps the single greatest invention in the history of computing was that of th
 
 The next great advance came in the form of the integrated circuit (IC), also referred to as a microchip.  An IC is a set of electronic circuits on a single plate of semiconductor material ( usually silicon ).  Several billion transistors (and other components) can fit onto a chip the size of a human fingernail.  This, in turn, led to the invention of the microprocessor. A microprocessor takes input, performs some sort of operation ( processing ), and produces an output.
 
+[describe CPU and processors]
+
 At this point, you've probably heard the term 'bit' before ('bit' stands for 'binary digit' ).  Why is this relevant? Remember we were talking about the invention of the transistor - well, a transistor is essentially a small electronic switch.  Like a light switch, it has two possible states: On and Off. A transistor has two possible states: High and Low.  We can represent this in binary as 1 or 0.
 
 ##Binary
