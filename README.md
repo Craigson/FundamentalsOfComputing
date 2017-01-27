@@ -148,7 +148,7 @@ To use a variable there are two steps:
 
 You can also declare and assign variables in one line: `int x = 42;`
 
-It is good practice to have descriptive variable names like length_square or number_coins. For C languages, like C++, it is convention to have all variable names all lowercased with underscores between words.
+It is good practice to have descriptive variable names like `length_squared` or `number_of_coins`. For C languages, like C++, it is convention to have all variable names all lowercased with underscores between words.
 
 Let's look at the following code:
 
