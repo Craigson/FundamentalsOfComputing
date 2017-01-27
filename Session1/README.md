@@ -63,3 +63,6 @@ cout<<"I'm printing something"<<endl;
 integer, short, and long are examples of primitive data types (as opposed to structured data). One difference between primitive and structured data is that primitives are stored by value not by reference. So if you have a variable of data integer and a value of 5, 5 will be stored to memory. We go over more data types and how much memory each take up in our previous lesson which can be found here[insert link]
 
 When choosing what data type to use, always choose the one that requires the smallest amount of memory, that will increase the processing speed of your program.
+
+## Implicit and Explicit Conversion
+Even though you have to declare a data type for every new variable, you can temporary or permantely change a variable data type using implicit or explicit conversion.
