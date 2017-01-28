@@ -1,6 +1,7 @@
 #Resources
-[Hardvard's CS50 course (best intro to CS course I've seen)](https://cs50.harvard.edu/)
-[Lynda.com's essential c++](https://www.lynda.com/C-tutorials/C-Essential-Training/182674-2.html)
+
+-[Hardvard's CS50 course (best intro to CS course I've seen)](https://cs50.harvard.edu/)
+-[Lynda.com's essential c++](https://www.lynda.com/C-tutorials/C-Essential-Training/182674-2.html)
 
 #Session 1
 
