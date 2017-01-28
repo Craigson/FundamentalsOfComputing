@@ -1,3 +1,7 @@
+#Resources
+[Hardvard's CS50 course (best intro to CS course I've seen)](https://cs50.harvard.edu/)
+[Lynda.com's essential c++](https://www.lynda.com/C-tutorials/C-Essential-Training/182674-2.html)
+
 #Session 1
 
 C++ is one of the most popular programming languages out there, particulary because of its efficient performance driven design. It is a C based language and has inherited much of the same syntax as the C programming language. A big difference between C++ and other languages such as Java, Ruby, or PHP is the control it provides over memory mangement. Most languages take care of this under the hood for you, but by being able to control how memory is allocated is one of the reasons C++ is so powerful. We'll go over just how memory is allocated in later sessions.
