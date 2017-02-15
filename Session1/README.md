@@ -66,3 +66,14 @@ When choosing what data type to use, always choose the one that requires the sma
 
 ## Implicit and Explicit Conversion
 Even though you have to declare a data type for every new variable, you can temporary or permantely change a variable data type using implicit or explicit conversion.
+
+## Examples
+Bouncing Ball with Cinder: https://github.com/katsully/BouncingBall
+
+## How to Install Cinder
+1. Open terminal, cd to your Documents directory
+2. Run the command `git clone --recursive https://github.com/cinder/Cinder.git` This will take a little while.
+3. Once that's done cd into your new directory
+4. Cd into xcode
+5. run `./fullbuild.sh` This also takes a while
+6. And you're good to go!
