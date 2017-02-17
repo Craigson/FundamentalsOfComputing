@@ -270,6 +270,80 @@ Encapsulation is a key part of Object Oriented Programming. It allows the progra
 Inheirtance is when one class *inheirts* all the instance data and functions from a different class. For example, our puppy class may inheirt from an Animal class that may have properties such as species, numOfLegs, lifeSpan, etc. And the Puppy class would have access to all of those properties. When you can think of Inheirtance, you can think of an is-a relationship. For example, a Puppy *is-a* Animal. A puppy has all the properties of a general animal, but is a more specific version. You still have to explicity say the Puppy Class inheirts from the Animal class, but the is-a test ensures that our logic is sound. For example, it would not make sense to have a Particle class inherit from an Animal class because a Particle is not an Animal.
 
 ##Polymorphism
+As stated in the previous section, a class that inheirits from a base class gets all the defined properties and functions from that base class. However, sometimes the new class needs a certain function to behave differently. We can solve this problem with *polymorphism*.
+
+Let's look at the base class Employee.cpp
+
+```
+class Employee {
+
+	Employee::Employee(float thePayRate)
+	{
+	  payRate = thePayRate;
+	}
+	
+	float Employee::getPayRate() const
+	{
+	  return payRate;
+	}
+	
+	float Employee::pay(float hoursWorked)
+	{
+	  return hoursWorked * payRate;
+	}
+}
+```
+
+Now let's see we have a Manager class that inheirits from the Employee class, here's the header file:
+
+```
+#include "Employee.h"
+
+class Manager : public Employee {
+public:
+  Manager(float thePayRate,
+          bool isSalaried);
+
+  bool getSalaried();
+
+  float pay(float hoursWorked);
+
+protected:
+  bool salaried;
+};
+```
+And here is the Manager.cpp file:
+
+```
+Manager::Manager(float thePayRate,
+                 bool isSalaried)
+  : Employee(thePayRate)
+{
+  salaried = isSalaried;
+}
+
+bool Manager::getSalaried()
+{
+  return salaried;
+}
+
+float Manager::pay(float hoursWorked)
+{
+  if (salaried)
+    return payRate;
+  else
+	  return Employee::pay(hoursWorked);
+}
+```
+
+So with the manager class, if they are salaried, payRate represents their salary, if not, payRate represents their hourly wage, just like an employee and now the manager's pay method reflects this. 
+
+**Important to note** When an object calls a function, the program will look for it starting with the object's class and then moving up to the base class. So if we have a manager object and call the getPayRate method, it will look at the Manager class, see no getPayRate so it will move up to the Employee class, and use the Employee class' getPayRate function. Likewise, if a manager object calls the pay function, it will look at the Manager class for the pay function, use that one and ignore the pay function from the Employee class.
+
+Polymorphism and overloading functions are two different things, read over both sections until that is clear. THIS IS A VERY COMMON INTERVIEW QUESTION.
+
+
+
 
 
 
