@@ -164,6 +164,114 @@ double costB = getTotalCost(100);
 
 The first call to our function sets the tax to 20%, the second call does not provide a specific tax value, so the function uses the default value of 15%.
 
+##Overloading Functions
+Two or more functions may have the same name, as long as the list of parameters is different. This is called *overloading functions*. Let's say you want to create a print method that can print integers or doubles, you could simply overload your user-defined print function.
+
+```
+void printNum(int i) {
+	cout << i << endl;
+}
+
+void printNum(double d) {
+	cout << d << endl;
+}
+
+print(5);
+print(5.5);
+```
+
+##Creating Classes
+Last session, we went over Object Oriented Programming. Creating classes is an essetential part of OOP. It allows use to encapsulate our code, and creates more easily to read code. This is similar to when you created objects in p5. When we create classes in C++ we need two files:
+
+1. Header file (.h extension)
+2. C++ fill (.cpp extension)
+
+Here is an example of a header file for a class called Puppy
+
+```
+class Puppy
+{
+     private :
+          int numOfSpots;
+          int age;
+          string breed;
+     public :
+          //with default value
+          Puppy(int s = 0, int a  = 0, string b = "mixed");
+          // destructor
+          ~Puppy();
+          //	setter function
+          void setBreed(string s);
+          // Print a description of the puppy
+          void print() const;
+          //compare two puppy objects
+          bool equals(Puppy&);
+};
+```
+
+And here is the corresponding C++ file:
+
+```
+#include "Puppy.h"
+
+// constructor
+Puppy::Puppy(int s=0, int a=0, string b="mixed") {
+	numOfSpots = s;
+	age = a;
+	breed = b;
+}
+
+// destructor
+Puppy::~ Puppy() {
+	// destructor code
+}
+
+void Puppy::setBreed(string s) {
+	breed = s;
+}
+
+void Puppy::print() {
+	cout << "This puppy has " << numOfSpots << " spots" << endl;
+	cout << "They are " << age << endl;
+	cout << "They are a " << breed << endl;
+}
+
+bool equals(Puppy& otherPuppy) {
+	if(numOfSpots == otherPuppy.numOfSpots 
+          && age == otherPuppy.age
+          && breed == otherPuppy.breed)
+          return true;
+     else
+          return false;
+}
+
+```
+The :: is called a scope resolution operator. It tells the program what class the function belongs to. Destructor methods are the opposite of constructors. They are called when objects are destroyed (allocated). They are preceeded by a ~. You can think of it as a clean-up function, when we no longer are using an instance of a class, we want to free up space in memory and the destructor function allows us to do that. We have a seperate function to set the breed variable, because breed is a private property. This means if you call puppy.breed outside of the Puppy class this will not work. In the equal method, we can pass in a different Puppy instance and compare the two objects.
+
+##Instantiating Classes
+Here is an example of our main class which includes our newly defined Puppy class:
+
+```
+#include "Puppy.h"
+
+Puppy puppy1;
+Puppy puppy2(10,2,"basset hound");
+
+puppy1.print();
+puppy2.print();
+```
+
+We have created two puppies, one with the default arguments and one where we passed in our own parameters. We can now uses these objects to call the functions in our Puppy class.
+
+##Encapsulation
+Encapsulation is a key part of Object Oriented Programming. It allows the programmer to hide variables and the code for functions from the user. This might not seem useful now, but if you ever opensource your code it would be really annoying if people started breaking your algorithms!
+
+##Inheirtance
+Inheirtance is when one class *inheirts* all the instance data and functions from a different class. For example, our puppy class may inheirt from an Animal class that may have properties such as species, numOfLegs, lifeSpan, etc. And the Puppy class would have access to all of those properties. When you can think of Inheirtance, you can think of an is-a relationship. For example, a Puppy *is-a* Animal. A puppy has all the properties of a general animal, but is a more specific version. You still have to explicity say the Puppy Class inheirts from the Animal class, but the is-a test ensures that our logic is sound. For example, it would not make sense to have a Particle class inherit from an Animal class because a Particle is not an Animal.
+
+##Polymorphism
+
+
 
 
 
