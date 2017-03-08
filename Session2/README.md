@@ -340,7 +340,7 @@ So with the manager class, if they are salaried, payRate represents their salary
 
 **Important to note** When an object calls a function, the program will look for it starting with the object's class and then moving up to the base class. So if we have a manager object and call the getPayRate method, it will look at the Manager class, see no getPayRate so it will move up to the Employee class, and use the Employee class' getPayRate function. Likewise, if a manager object calls the pay function, it will look at the Manager class for the pay function, use that one and ignore the pay function from the Employee class.
 
-Polymorphism and overloading functions are two different things, read over both sections until that is clear. THIS IS A VERY COMMON INTERVIEW QUESTION.
+Polymorphism and overloading functions are two different things, read over both sections until that is clear. THIS IS A VERY COMMON INTERVIEW QUESTION
 
 
 
