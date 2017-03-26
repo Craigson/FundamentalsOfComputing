@@ -52,13 +52,50 @@ A big downside to arrays is that they are a fixed size and once you initalize th
 Here are some ways you can declare a vector:
 
 ```
-// initialized as an empty list of stings
-vector<string> cats;
+// initialized as an empty list of ints
+vector<int> nums;
 
-// nums contains 10 integer values
-vector<int> nums(10);
+// nums2 contains 10 integer values
+vector<int> nums2(10);
 
 // prices contains 5 double values that are all set to 0.0
 vector<double> prices(5, 0.0);
 ```
+
+To add elements to a vector we use the function *push_back*
+
+```
+for(int i=0; i<10; i++){
+	nums2.push_back(i);
+}
+```
+
+Now nums is a vector containing 0,1,2,3,4,5,6,7,8,9.
+
+If you already initialized a vector with a certain size (that can be changed later in the program) you can use [] to access certain indices.
+
+```
+for(int i=0; i<nums2.size(); i++){
+	nums[i]=i;
+}
+```
+
+Now nums2 also contains 0,1,2,3,4,5,6,7,8,9. There are also other vector functions we can use:
+
+```
+// at(idx) returns the element at index idx
+int value = nums.at(2);		
+
+// capacity() returns the max number of elements the vector can store before having to add additional 
+// memeory. Vectors have a finite amount in memory, and if they need more memory they create a larger vector 
+// and copy everything over from the original
+int cap = nums.capacity();	
+
+// removes the last element
+nums.pop_back()
+
+// clears the vector
+nums.clear()
+```
+
 
