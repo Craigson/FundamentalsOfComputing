@@ -1,6 +1,6 @@
-#Session 3
+# Session 3
 
-##Arrays
+## Arrays
 Array is something that you'll find in almost every programming language. It allows you to store x amount of same data type elements in a variable. However, you must declare at initialization how many elements can be stored in the array. You don't need to use all of the available places, but you can never change how many slots are in the array. So if you use all the available slots, you have to copy the array into a new, and larger, array.
 
 Elements in an array are stored in consective memory addresses. You declare an array as `datatype varname[num]`. Here are some examples of that:
@@ -22,7 +22,7 @@ Arrays are just pointers to where the data is stored. So when you pass an array 
 
 Also remember, to access an element in an array you *must* use an index value (ie seasons[1], names[3], ages[8]).
 
-##Pointers
+## Pointers
 Every piece of data in a program can be found in memory via an address. A pointer is data type consisting of an address to a value in memory. Let's look at some code:
 
 ```

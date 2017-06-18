@@ -1,6 +1,6 @@
-#Session 4
+# Session 4
 
-##Structured Data
+## Structured Data
 In C++ you have access to something called *Abstract Data Types*, or ADT. ADT group together multiple primitive data types, and are created by the programmer. This may sound similar to a class, but they are different because ADT does not include any function definitions. 
 
 A structured data type can contain other struct data types or arrays. To access the data properities of a struct data array you use dot notation. Also, you can initialize a structure when you create it.
@@ -45,7 +45,7 @@ for(int i=0; i<numEmployees; i++) {
 }
 ```
 
-##Vectors
+## Vectors
 
 A big downside to arrays is that they are a fixed size and once you initalize them, you can never change their size. So C++ offers the data type *vector*. It's similar to an array, but their size is dynamic, meaning we can change its size throughout the program. This is very similar to Java's ArrayList. But just like arrays, vector can only store data of the same data type.
 

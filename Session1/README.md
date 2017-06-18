@@ -1,13 +1,13 @@
-#Session 1
+# Session 1
 
 C++ is one of the most popular programming languages out there, particulary because of its efficient performance driven design. It is a C based language and has inherited much of the same syntax as the C programming language. A big difference between C++ and other languages such as Java, Ruby, or PHP is the control it provides over memory mangement. Most languages take care of this under the hood for you, but by being able to control how memory is allocated is one of the reasons C++ is so powerful. We'll go over just how memory is allocated in later sessions.
 
 C++ also provides a more powerful option for creative coding, espically when used with frameworks like Cinder or OpenFrameworks.
 
-##How do you code C++
+## How do you code C++
 As you may have guessed, the p5.js editor won't work for C++. There are many options for which IDE, or integrated development environment you use to develop C++, but Craig and I will be deomstrating with XCode.
 
-##Return Types
+## Return Types
 We talked about static typing and dynamic typing last session and you can find our notes on that *here*[insert link]. As a reminder, C++ is a statically typed language where a type is bound to a variable, so instead of 
 
 `var x = 5;`

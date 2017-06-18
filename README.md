@@ -2,7 +2,7 @@
 By Craig Pickard & Kat Sullivan
 </br>
 </br>
-##A short history of computing
+## A short history of computing
 The very first electromechanical computers comprised electric switches driving mechanical relays.  Later, around the 1930s, mechanical relays were replaced by vacuum tubes.  This greatly increased the capabilities and operating speed of these early machines.
 
 Perhaps the single greatest invention in the history of computing was that of the bipolar transistor.  Why? They're smaller, require less power, generate less heat, and are more reliable.
@@ -19,7 +19,7 @@ Whether your computer can run a 32-bit or 64-bit operating system depends on the
 
 At this point, you've probably heard the term 'bit' before ('bit' stands for 'binary digit' ).  Why is this relevant? Remember we were talking about the invention of the transistor - well, a transistor is essentially a small electronic switch.  Like a light switch, it has two possible states: On and Off. A transistor has two possible states: High and Low.  We can represent this as the binary numbers 1 or 0.
 
-##Binary, Decimal, & Hexadecimal
+## Binary, Decimal, & Hexadecimal
 You are use to the decimal (decem is latin for ten) notation, which uses ten numbers 0-9. If you need to represent a number larger than nine, you use a combination of these numbers. 
 
 Let's look at the number **437**
@@ -95,20 +95,20 @@ In a very simple sense, your computer's memory is represented in physical space 
 
 As it turns out, 8bits of data (or a single byte) is a very convenient size for storing all kinds of different information.  For example, every character/letter/number that's found on your keyboard fits into a single byte. This is thanks to a system called ASCII.
 
-##ASCII
+## ASCII
 ASCII is an abbreviation for <i>American Standard Code for Information Interchange</i>. It's a character-encoding scheme used to represent text in a computer.  Each ASCII character can be stored in a single byte because it's represented by a decimal number within the range of 0-255.  The image below shows the ASCII character table.  Each character is represented by a decimal number, which is in turn stored in binary as a combination of 8 bits.  For example, the lowercase 'a' is represented in decimal as 97.  This would be stored in a single byte of memory as the binary number 1100001.
 
 Below is a table showing the mapping of ASCII characters to their decimal representation.
 ![Image of Yaktocat](http://www.asciichars.com/_site_media/ascii/ascii-chars-landscape.jpg)
 
-##Memory
+## Memory
 If you work with, or even on, a computer, there's a good chance you've heard someone refer to its 'memory', but what exactly does that mean? At this point it's important to make the distinction between 'memory' and 'storage'.  Your computer's hard disk drive (HDD) is a data storage device.  Traditional HDDs use rigid rapidly rotating discs covered with magnetic material.  Magnetic heads on moving actuator arms read and write data to these discs.  'Saving' a file on your computer's hard drive involves the moving actuator arms writing data to the disc by magnetising specific 'sectors' on the disc iteslf. This 'permanent' storage is known as non-volatile memory.  The term 'non-volatile' refers to the fact that the data is retained, even after the HDD is powered off.  Anoter form of storage happens in <i>flash memory</i>. Portable storage devices like USB drives make use of flash memory and are referred to as Solid State Drives ( SSD ).  SSDs make use of semiconductor chips, rather than magnetic media, to store data.
 
 Perhaps you've heard the term 'RAM', but perhaps not.  RAM stands for 'Random Access Memory' and is more often than not the specific form of memory people are referring to when they talk about a computer's 'memory'.  For instance, if you're looking to buy a new laptop, one of the first things you look for in the specification is its memory, ie. how many gigabytes ( GB ) of RAM does it have.  Well why is this important?  By it's very nature, accessing your computer's RAM is incredibly fast! The reason for this is inferred from it's name, ie. 'random access'.  RAM is a form of integrated circuit ( remember those? ). RAM's speed is a result of the fact that data can be read and/or written at the same speed no matter where in the memory the data is stored.  Read/Write speeds of storage like HDDs depends very much on the data's physical location on the disc.  Okay, now we know what RAM is, but what do we do with it?
 
 When you double click an executable file on your computer ( for example a .exe file on Windows, or an application on Mac OSX ), or you run a sketch that you've created in something like p5.js, processing, openFrameworks, or Cinder, your computer allocates it a large chunk of contiguous ( meaning sequential ) memory in your RAM. In a physical sense we can think of this as n-number of sequential transisors set aside to store n-bytes of data ( the size is of which determined by your computer at runtime ). We can think of this conceptually as a 'block' of memory.  Now, the important thing to understand here is that your computer keeps track of the location of where every byte of data is stored. It does this using something called a memory <i>address</i>.  You can think of it as being analogous to your street address where you live.  You can give someone your address, which is essentially just a collection of characters ( remember ASCII ), and they'll know how to find you.  The location of each byte in memory has a physical address ( that looks something like this  <b>0x101d00a70</b> ), which tells the computer where to look for that specific piece of data.  So how do we store information at one of these addresses? We do this using <i>variables</i>.
 
-##Variables
+## Variables
 
 A variable essentially represents a piece of data that is stored at a specific location in your computers physical memory.  If you think about it, you can change the value of the variable, but the variable name itself remains unchanged.  In the same way, think about the house or apartment that you currently live in, the address never changes, but over the years the occupants change.  
 
@@ -169,7 +169,7 @@ x = x + 1;
 
 See the problem? We assign x after we declare it, but x has no value, or is null, and something plus nothing, is not only nothing, it's an error.
 
-##Algorithms
+## Algorithms
 An algorithm is a set of step-by-step instructions a computer program follows to do something
 
 * Just like a recipe or a set of driving directions
@@ -177,7 +177,7 @@ An algorithm is a set of step-by-step instructions a computer program follows to
 	* Usually there is no single 'best' option, best each algorithm will have pros and cons
 
 
-##Arrays
+## Arrays
 An array is a large block of memory. If we have an array with 10 elements, it just means we have enough memory to store 10 elements.
 
 If you have ten integers in your array and each integer is four bytes, your array is forty bytes of memory. The first four bytes represent array[0], the next four bytes represent array[1], etc.
