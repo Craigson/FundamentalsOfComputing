@@ -1,6 +1,6 @@
-#Session 2
+# Session 2
 
-##Expressions
+## Expressions
 Most of C++'s operators are either straightforward or something you have already encountered in p5. However the << and >> symbols aren't quite as obvious. Let's look a code snippet.
 
 ```
@@ -13,7 +13,7 @@ cin>>age;
 
 First I declare the name and age variable along with their datatypes, then I'm sending the string, "Enter your name and age:" to the console. A user can input their name and age (separated by a newline) and the two inputs are assigned to name and age.
 
-##Loops
+## Loops
 C++ has three types of loops
 
 1. Do...while loop - always executes at least once
@@ -35,7 +35,7 @@ while loops and for loops should be familiar to you, so let's talk about do whil
 
 The block of code will keep executing as long as the conditional statment (a < 20) is true. Unlike a traditional while loop the block of code is guaranteed to run at least once, regardless of whether the conditional statement is true or false. 
 
-##Using Predefined Functions
+## Using Predefined Functions
 Just like with p5, C++ has several built in libraries, and if you're writing in C++, you have access to these functions. For example, the <cstdlib> library has the rand() function, which allows us to generate a random number. However, it is important to note that C++ uses a psudeorandom number generator, and that eventually, the series of numbers it outputs will repeat itself. To create a create a true random number we need a seed value and the srand(int num) function, which has the program generate a new sequence of numbers everytime you run the program.
 
 To use any of these predefined functions, you have to include the library the function belongs to, just like with p5.
@@ -47,7 +47,7 @@ v2 = rand() % 100 + 1;     // v2 in the range 1 to 100
 v3 = rand() % 30 + 1985;   // v3 in the range 1985-2014
 ```
 
-##Creating User-Defined Functions
+## Creating User-Defined Functions
 This is almost exactly the same as creating a function in p5. A function is a group of statements that tells a computer how to execute a task. A C++ function has four parts:
 
 1. Return type
@@ -105,7 +105,7 @@ double getDistance(int x1, int y1, int x2, int y2) {
 }
 ```
 
-##Call by Value vs Call by Reference
+## Call by Value vs Call by Reference
 There are two types of parameters that can be used in functions
 
 1. Call by Value
@@ -118,7 +118,7 @@ Let's look at an example of call by value.
 ```
 int num1 = 1;
 int num2 = 2;
-void addFive(int a, int b) {
+int addFive(int a, int b) {
 	a += 5;
 	b += 5;
 	return a + b;
@@ -135,7 +135,7 @@ Let's look at an example of call by reference, it will look exactly the same exc
 ```
 int num1 = 1;
 int num2 = 2;
-void addFive(int& a, int b&) {
+int addFive(int& a, int b&) {
 	a += 5;
 	b += 5;
 	return a + b;
@@ -147,7 +147,7 @@ cout << num2 << endl;
 ```
 In this case, the three numbers printed to the console are 13, 6, and 7.
 
-##Default arguments
+## Default arguments
 Just like with p5, we can use default arguments for our functions. Normally, parameters are undefined when we define a function, and when we call that function and pass in numbers or strings or objects or whatever the function requires, we give the parameters value. However, sometimes it's a good idea to have a parameter default to a certain value, which also makes passing in a value for that parameter optional.
 
 Let's look at a function to find the total sales cost:
@@ -164,7 +164,7 @@ double costB = getTotalCost(100);
 
 The first call to our function sets the tax to 20%, the second call does not provide a specific tax value, so the function uses the default value of 15%.
 
-##Overloading Functions
+## Overloading Functions
 Two or more functions may have the same name, as long as the list of parameters is different. This is called *overloading functions*. Let's say you want to create a print method that can print integers or doubles, you could simply overload your user-defined print function.
 
 ```
@@ -180,7 +180,7 @@ print(5);
 print(5.5);
 ```
 
-##Creating Classes
+## Creating Classes
 Last session, we went over Object Oriented Programming. Creating classes is an essetential part of OOP. It allows use to encapsulate our code, and creates more easily to read code. This is similar to when you created objects in p5. When we create classes in C++ we need two files:
 
 1. Header file (.h extension)
@@ -263,13 +263,13 @@ puppy2.print();
 
 We have created two puppies, one with the default arguments and one where we passed in our own parameters. We can now uses these objects to call the functions in our Puppy class.
 
-##Encapsulation
+## Encapsulation
 Encapsulation is a key part of Object Oriented Programming. It allows the programmer to hide variables and the code for functions from the user. This might not seem useful now, but if you ever opensource your code it would be really annoying if people started breaking your algorithms!
 
-##Inheirtance
+## Inheirtance
 Inheirtance is when one class *inheirts* all the instance data and functions from a different class. For example, our puppy class may inheirt from an Animal class that may have properties such as species, numOfLegs, lifeSpan, etc. And the Puppy class would have access to all of those properties. When you can think of Inheirtance, you can think of an is-a relationship. For example, a Puppy *is-a* Animal. A puppy has all the properties of a general animal, but is a more specific version. You still have to explicity say the Puppy Class inheirts from the Animal class, but the is-a test ensures that our logic is sound. For example, it would not make sense to have a Particle class inherit from an Animal class because a Particle is not an Animal.
 
-##Polymorphism
+## Polymorphism
 As stated in the previous section, a class that inheirits from a base class gets all the defined properties and functions from that base class. However, sometimes the new class needs a certain function to behave differently. We can solve this problem with *polymorphism*.
 
 Let's look at the base class Employee.cpp
